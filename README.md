@@ -31,7 +31,7 @@ class Main{
 	static function Main(){
 		// This is the result of scanning the QR code as text.
 		var result = decrypt("dbhvecY6Roa4NF3gAzEbkTibZZzXAEYpMg8197BQWMS2+ID24FGDKWB5IEcuxjsA81ChprhSO3EsjKMRDbBWLg==");
-		trace(result.epic); // "ABC1234566"
+		trace(result.epic); // "ASG1543107"
 		trace(result.id); // 1234
 	}
 }
@@ -44,7 +44,7 @@ import eci.EpicQR;
 // This is the result of scanning the QR code as text.
 String e1 = "dbhvecY6Roa4NF3gAzEbkTibZZzXAEYpMg8197BQWMS2+ID24FGDKWB5IEcuxjsA81ChprhSO3EsjKMRDbBWLg==";
 Result r1 = EpicQR.decode(e1);
-assert r1.epic.equals("ABC1234566") : "Invalid EPIC";
+assert r1.epic.equals("ASG1543107") : "Invalid EPIC";
 assert r1.id == 1234 :  "Invalid Unique ID";
 ```
 
@@ -53,7 +53,7 @@ assert r1.id == 1234 :  "Invalid Unique ID";
 // TODO Import
 const E = require('eci').EpicQR;
 var r = E.decode("dbhvecY6Roa4NF3gAzEbkTibZZzXAEYpMg8197BQWMS2+ID24FGDKWB5IEcuxjsA81ChprhSO3EsjKMRDbBWLg==")
-console.log(r.epic) // "ABC1234566"
+console.log(r.epic) // "ASG1543107"
 ````
 
 ## Specification
